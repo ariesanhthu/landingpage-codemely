@@ -5,7 +5,16 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; 
+  --primary: #fda41d;
+  --secondary: #fde9c7;
+  --blue-color: #00d1ff;
+  --red-color: #fd1d1d;
+  --scrollbarBG: #000;
+  --thumbBG: #fde9c7;
+  --bg-main-color: #202020;
+  --bg-footer-color: #fde9c7;
+  --height-header: 78px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +38,17 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+/* ----------- ANIMATION -----------*/
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
